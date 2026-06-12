@@ -1,0 +1,30 @@
+.btn {
+	border-radius: 8px;
+	background-color: $black;
+	color: $while;
+	display: inline-block;
+	transition: all 0.2s ease-in;
+
+	&--medium {
+		padding: 12px 56px;
+		font-style: 18px;
+		font-weight: 500;
+		letter-spacing: -0.4px;
+		line-height: 1.7777;
+	}
+	&--small {
+		padding: 9px 40px;
+		font-style: 16px;
+		font-weight: 500;
+		letter-spacing: -0.4px;
+		line-height: 1.75;
+	}
+	&--wide {
+		width: 100%;
+	}
+
+	&:hover {
+		color: $blue;
+		opacity: 0.9;
+	}
+}

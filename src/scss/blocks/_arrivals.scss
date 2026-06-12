@@ -1,0 +1,25 @@
+.arrivals {
+    padding: 48px 0;
+   
+}
+
+.arrivals__row {
+   
+    display: flex;
+    align-items: center;
+    justify-content:space-around;  
+    margin-bottom: 48px;
+}
+
+
+
+/* Адаптация под узкие экраны (например, до 768px) */
+@media (max-width: 768px) {
+    .arrivals__row {
+        flex-direction: column;  
+        gap: 40px;               
+        align-items: center;     
+    }
+
+    
+}

@@ -1,0 +1,41 @@
+.promotion__timer {
+	margin-bottom: 24px;
+}
+
+.timer {
+	display: flex;
+	gap: 16px;
+	align-items: flex-start;
+}
+.timer__el {
+	text-align: center;
+}
+.timer__value {
+	background-color: $while;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	color: black;
+	font-family: $second-accent;
+	font-weight: 500;
+	font-size: 34px;
+	letter-spacing: -0.6px;
+}
+.timer__desc {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.67;
+	text-align: center;
+}
+
+
+@media (max-width: 900px) {
+	.timer__value {
+	
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	
+}
+}

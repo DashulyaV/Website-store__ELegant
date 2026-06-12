@@ -1,0 +1,24 @@
+
+.html,
+body{
+    font-family: $second-accent;
+    font-size: 14px;
+    scroll-padding-top: 100px; 
+    
+}
+
+
+.container{
+max-width: 1184px;
+margin: 0 auto;
+padding: 0 32px;
+// background-color:#5868 ;
+
+
+}
+
+.header{
+    position: sticky;
+  top: 0;                
+  z-index: 1000;       
+}

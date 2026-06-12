@@ -1,0 +1,46 @@
+.dots {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.arrivals__dots {
+	position: relative;
+}
+
+.swiper-pagination-bullet {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: transparent;
+	opacity: 1;
+	margin: 0 !important;
+	border: none;
+	box-sizing: border-box;
+	padding: 3px;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #6c7275;
+		transition: background-color 0.3s;
+	}
+
+	&-active {
+		border: 1px solid #141718;
+		border-radius: 50% !important;
+		background: transparent;
+
+		&::before {
+			background-color: #141718;
+		}
+	}
+}
+
+

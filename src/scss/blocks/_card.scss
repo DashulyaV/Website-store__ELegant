@@ -1,0 +1,111 @@
+.card {
+	position: relative;
+	display: grid;
+	gap: 12px;
+	max-width: 262px;
+
+	&:hover {
+		.card__fav {
+			display: block;
+			transform: translateY(0%);
+			opacity: 1;
+		}
+		.card__btn {
+			display: block;
+			transform: translateY(0%);
+			opacity: 1;
+		}
+	}
+}
+//ссылка на всю карточку
+.card__link {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.card__picture {
+	position: relative;
+}
+.card__img {
+	max-width: 262px;
+	height: 349px;
+}
+.card__new {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	padding: 4px 14px;
+	background-color: $while;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1;
+	text-transform: uppercase;
+	text-align: center;
+	color: #121212;
+}
+.card__fav {
+	position: absolute;
+	z-index: 9;
+	top: 16px;
+	right: 16px;
+
+	transition: all 0.2s ease-in;
+	opacity: 0;
+	transform: translateY(-50%);
+
+	display: none;
+}
+.btn-fav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border-color: $while;
+	border-radius: 50%;
+	box-shadow: 0 8px 16px -8px rgba(15, 15, 15, 0.12);
+	background: #fff;
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		background: $yellow;
+	}
+}
+
+.card__btn {
+	position: absolute;
+	z-index: 9;
+	left: 16px;
+	bottom: 16px;
+	right: 16px;
+	transition: all 0.2s ease-in;
+	opacity: 0;
+	transform: translateY(50%);
+
+	display: none;
+}
+.card__desc {
+	display: grid;
+	gap: 4px;
+}
+.card__rating {
+	display: flex;
+	gap: 5px;
+}
+
+.card__title {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.63;
+	color: $black;
+}
+.card__price {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.57;
+	color: #121212;
+}

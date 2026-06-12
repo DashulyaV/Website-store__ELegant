@@ -1,0 +1,120 @@
+.bestseller {
+	margin-bottom: 80px;
+}
+
+.bestseller__title {
+	padding: 48px 0;
+}
+
+.bestseller__cards {
+	display: grid;
+	gap: 48px 24px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1184px) {
+	.bestseller__cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 900px) {
+	.bestseller__cards {
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 600px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 700px) {
+	
+	.bestseller__cards {
+		grid-template-columns: repeat(2, 152px);
+		gap: 24px 30px;
+		justify-content: center;
+		max-width: 100%;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.bestseller__cards .card {
+		width: 152px;
+		height: 281px;
+		max-width: none;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	/* ----- Обёртка картинки ----- */
+	.bestseller__cards .card__picture {
+		width: 152px;
+		flex-shrink: 0;
+	}
+
+	/* ----- Изображение ----- */
+	.bestseller__cards .card__img {
+		width: 152px;
+		height: auto;
+		max-height: 190px;
+		object-fit: cover;
+	}
+
+	/* ----- Блок описания ----- */
+	.bestseller__cards .card__desc {
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+		flex: 1;
+		overflow: hidden;
+	}
+
+	/* ----- Название товара ----- */
+	.bestseller__cards .card__title {
+		font-size: 10px;
+		line-height: 1.3;
+		display: -webkit-box;
+		// -webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	/* ----- Цена ----- */
+	.bestseller__cards .card__price {
+		font-size: 10px;
+		line-height: 1.4;
+	}
+
+	/* ----- Звёзды рейтинга ----- */
+	.bestseller__cards .card__rating-img {
+		width: 9px;
+		height: 9px;
+	}
+	.bestseller__cards .card__rating {
+		gap: 2px;
+	}
+
+	/* ----- Бейдж "hot" ----- */
+	.bestseller__cards .card__new {
+		font-size: 8px;
+		top: 5px;
+		left: 5px;
+	}
+
+	/* ----- Кнопка "Add to cart" ----- */
+	.bestseller__cards .card__btn .btn--small {
+		font-size: 8px;
+		padding: 3px 5px;
+	}
+
+	/* ----- Иконка сердечка ----- */
+	.bestseller__cards .card__fav .btn-fav {
+		width: 22px;
+		height: 22px;
+	}
+	.bestseller__cards .card__fav .btn-fav img {
+		width: 11px;
+		height: 11px;
+	}
+}
